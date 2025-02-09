@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import LoginPage from "./components/LoginPage";
-import bgVideo from "./video/videoplayback.mp4";
+import Register from "./components/Register.jsx";
+import bgVideo from "./video/bg-img.mp4";
 import "./App.css";
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
               </>
             }
           />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/login" element={<LoginPage />} />.
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>

@@ -19,7 +19,7 @@ const Hero = () => {
         {showDropdown && (
           <div className="dropdown-menu">
             <button onClick={() => navigate("/login")}>➡️ Login</button>
-            <button onClick={() => console.log("Register clicked")}>
+            <button onClick={() => navigate("/register")}>
               ➡️ Register
             </button>
           </div>
