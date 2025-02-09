@@ -1,23 +1,27 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Hero.css";
 import logo from "../images/th3cyb3rhub-fav.png"; // Replace with your logo path
 
 const Hero = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="app-container">
       {/* Logo with Dropdown */}
-      <div 
-        className="logo-container" 
-        onMouseEnter={() => setShowDropdown(true)} 
+      <div
+        className="logo-container"
+        onMouseEnter={() => setShowDropdown(true)}
         onMouseLeave={() => setShowDropdown(false)}
       >
         <img src={logo} alt="Logo" className="logo" />
         {showDropdown && (
           <div className="dropdown-menu">
-            <button onClick={() => console.log("Login clicked")}>➡️ Login</button>
-            <button onClick={() => console.log("Register clicked")}>➡️ Register</button>
+            <button onClick={() => navigate("/login")}>➡️ Login</button>
+            <button onClick={() => console.log("Register clicked")}>
+              ➡️ Register
+            </button>
           </div>
         )}
       </div>

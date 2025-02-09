@@ -58,3 +58,50 @@
 .hero-container p {
   font-size: 1.5rem;
 }
+
+.hero-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("") no-repeat center center/cover;
+}
+
+.hero-container {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.hero-container h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.hero-container h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.hero-container p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+.hero-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #e65c00;
+}
