@@ -11,9 +11,9 @@
 .tech-navbar {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     padding: 15px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .nav-link {
@@ -33,47 +33,48 @@
 
 /* Title */
 .tech-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 45px;
 }
 
 .tech-underline {
     width: 100px;
-    height: 4px;
+    height: 3px;
     background-color: green;
-    margin: 8px auto;
+    margin: 10px auto;
 }
 
 /* Grid Layout - 3 Cards Per Row */
 .tech-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 900px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1000px;
     margin: 0 auto;
-    gap: 20px;
-    padding: 20px;
+    gap: 32px;
+    padding: 30px;
 }
 
 /* Cards */
 .tech-card {
-    background: black;
-    border: 2px solid purple;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.092);
+    border: 3px solid rgb(14, 242, 26);
+    padding: 40px;
+    margin: 6px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 10px rgba(49, 233, 4, 0.817);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tech-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 /* Card Titles */
 .tech-card-title {
-    font-size: 1.2rem;
-    color: purple;
+    font-size: 1.5rem;
+    color: rgb(0, 249, 8);
 }
 
 /* Card Text */
@@ -85,19 +86,19 @@
 /* Explore Button */
 .tech-button {
     margin-top: 10px;
-    padding: 10px 20px;
-    border: 2px solid green;
-    color: green;
+    padding: 15px 25px;
+    border: 2px solid rgb(8, 252, 0);
+    color: rgb(7, 230, 63);
     background: transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     transition: all 0.3s ease;
 }
 
 .tech-button:hover {
-    background: green;
-    color: black;
+    background: rgb(21, 0, 255);
+    color: rgb(0, 0, 0);
 }
 
 /* Responsive - Adjust Grid for Smaller Screens */
@@ -112,3 +113,4 @@
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+

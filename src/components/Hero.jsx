@@ -9,28 +9,28 @@ const Hero = () => {
 
   return (
     <div className="app-container">
-      {/* Logo with Dropdown */}
-      <div
-        className="logo-container"
-        onMouseEnter={() => setShowDropdown(true)}
-        onMouseLeave={() => setShowDropdown(false)}
-      >
+      {/* Logo */}
+      <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
-        {showDropdown && (
-          <div className="dropdown-menu">
-            <button onClick={() => navigate("/login")}>➡️ Login</button>
-            <button onClick={() => navigate("/register")}>
-              ➡️ Register
-            </button>
-          </div>
-        )}
       </div>
 
       {/* Hero Content */}
       <div className="hero-container">
+        <br /> <br /> <br /> <br />
         <h1>Welcome to Capture The Flag</h1>
         <p>“Technology trust is a good thing, but control is a better one.”</p>
       </div>
+
+      {/* Buttons at the bottom */}
+      <div className="button-container">
+  <button className="hero-button" onClick={() => navigate("/login")}>
+    Login
+  </button>
+  <button className="hero-button" onClick={() => navigate("/register")}>
+    Register
+  </button>
+</div>
+
     </div>
   );
 };

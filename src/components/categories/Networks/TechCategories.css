@@ -1,0 +1,100 @@
+/* Challenge Card Container */
+.tech-card {
+  background: #0d0d0d;
+  border: 2px solid #7200f0; /* Purple border */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #d4c1ff; /* Light purple text */
+  box-shadow: 0px 0px 10px rgba(114, 0, 240, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-card:hover {
+  transform: scale(1.05);
+}
+
+/* Completed Status */
+.tech-status {
+  background-color: #0dbf67; /* Green */
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+/* Difficulty Badge */
+.tech-difficulty {
+  background-color: #7200f0; /* Purple */
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Buttons */
+.tech-button {
+  background: transparent;
+  border: 2px solid #0dbf67;
+  color: #0dbf67;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-button:hover {
+  background: #0dbf67;
+  color: black;
+}
+
+/* Hint Button */
+.tech-button:nth-child(2) {
+  border: 2px solid #0dbf67;
+}
+
+/* Flag Input Box */
+.flag-input {
+  width: 80%;
+  background: #1a1a1a;
+  border: none;
+  padding: 10px;
+  color: #d4c1ff;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+  outline: none;
+  border: 2px solid #333;
+  transition: border 0.3s ease-in-out;
+}
+
+.flag-input:focus {
+  border: 2px solid #7200f0;
+}
+
+/* Flag Submit Button */
+.flag-submit {
+  background: transparent;
+  border: 2px solid #0dbf67;
+  color: #0dbf67;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flag-submit:hover {
+  background: #0dbf67;
+  color: black;
+}

@@ -91,6 +91,43 @@
 }
 
 .hero-button {
+  margin: 50px;
+  /* margin-top: 100px; */
+  padding: 15px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #191fe1fb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #1f00e6e2;
+}
+
+.hero-container {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 30%; /* Moves buttons closer to the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.hero-button {
   padding: 12px 24px;
   font-size: 1rem;
   font-weight: bold;
